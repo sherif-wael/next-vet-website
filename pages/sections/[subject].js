@@ -30,7 +30,8 @@ export async function getStaticPaths(){
 
 
 export async function getStaticProps({params}){
-    let {sections} = data.subjects[params.subject];
+    let subject = params.subject.replace(/-(\w)/g, (m, l) => l.toUpperCase());
+    let {sections} = data.subjects[subject];
 
     return {
         props: {

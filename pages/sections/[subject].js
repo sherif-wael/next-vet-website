@@ -3,10 +3,14 @@ import { mixins } from "../../styles";
 import Layout from "../../components/layout";
 import data from "../../subjects";
 
-export default function Sections({lectures}){
+export default function Sections({sections}){
     return (
         <Layout>
-
+            {
+                sections.map(({title}) => (
+                    <h2 className="font-round">{title}</h2>
+                ))
+            }
         </Layout>
     )
 }

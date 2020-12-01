@@ -203,7 +203,7 @@ function VerticalNav(){
                                 let subjectLink = subject.toLowerCase().replace(/\s/g, "-");
                                 return (
                                     <li key={i}>
-                                        <span onClick={() => handleClick(i)} className="noselect">{subject}</span>
+                                        <span onClick={() => handleClick(i)}>{subject}</span>
                                         <Collapse extend={state[i] || false}>  
                                             <ul className="link-list">
                                                 <li>

@@ -87,6 +87,12 @@ const GlobalStyle = createGlobalStyle`
         user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
     }
+
+    span, 
+    button,
+    li{
+        -webkit-tap-highlight-color: transparent;
+    }
 `
 
 export default GlobalStyle
